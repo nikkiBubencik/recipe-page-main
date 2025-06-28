@@ -1,0 +1,120 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+
+    --font-weight-s: 400;
+    --font-weight-m: 600;
+    --font-weight-l: 700;
+    
+    --spacing: 1.5rem;
+}
+html{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--Stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+h1, h2, .intro-header, .section-heading {
+  font-family: 'Young Serif', serif;
+}
+
+.recipe-card{
+    background-color: var(--white);
+    width: 100%;
+    max-width: 30rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid var(--Stone-150);
+}
+#recipe-image img{
+    width: 25rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+#recipe-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing);
+}
+.prep-container{
+    background-color: var(--Rose-50);
+    color: var(--Rose-800);
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: var(--spacing);
+}
+.prep-container h2{
+    font-weight: var(--font-weight-m);
+}
+
+table tr > :last-child{
+    font-weight: var(--font-weight-m);
+}
+table{
+    border-collapse: collapse;
+}
+tr > *{
+    border-bottom: 1px solid var(--Stone-150);
+    padding: .5rem;
+}
+.section-heading{
+    color: var(--Brown-800);
+    font-weight: var(--font-weight-m);
+}
+.intro-header{
+    color: var(--Brown-800);
+    font-weight: var(--font-weight-l);
+}
+.intro-container{
+    color: var(--Stone-900);
+    margin: var(--spacing);
+
+}
+.instructions-container{
+    color: var(--Stone-600);
+    margin: var(--spacing);
+
+}
+.nutrition-container{
+    color: var(--Stone-600);
+    margin: var(--spacing);
+
+}
+.ingredients-container{
+    color: var(--Stone-600);
+    margin: var(--spacing);
+
+}
+@media screen and (max-width: 375px) {
+    .recipe-card{
+        border-radius: 0;
+    }
+    #recipe-image{
+        margin-top: 0;
+    }
+    #recipe-image img{
+        border-radius: 0;
+    }
+}
